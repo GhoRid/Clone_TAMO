@@ -1,0 +1,278 @@
+*{
+    list-style: none;
+    text-decoration: none;      /*링크 색 바뀌는 것 삭제*/
+    border-collapse: collapse;  /*모든 밑줄 뜨는 것 삭제*/
+    margin:0px;
+    padding: 0px;
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+
+    /* -ms-user-select: none; 
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none; 각 브라우저 별로 텍스트 복사 금지*/
+    user-select: none; /*텍스트 복사 금지*/
+}
+
+.weap{
+    background-color: #F1F2F3;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 80;
+ }
+
+.content_font{
+    font-size: 20px;
+    font-weight: 60;
+ }
+
+ .result{
+    font-size: 24px;
+    
+ }
+ 
+ .intro_bg{
+    background-image: url(images/intro.png);
+    width: 100% ;
+    height: 718px;
+    background-repeat: no-repeat;  /*화면 크기를 못 채울 때 반복해서 할 것인가?*/
+    background-size: cover;
+ }
+   
+.header{
+    display:flex;
+    width:1280px;
+    height: 86px;
+    margin: auto;
+}
+
+.search_area{
+    width:300px;
+    height:40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 24px;
+}
+
+.nav{
+    display: flex;
+    width: calc(1280px - 300px);
+    justify-content: flex-end;
+    line-height: 86px;   /*backgrond 기준으로 글자 높이 맞추기*/
+    
+}
+
+.nav>li>a{
+    margin-left: 84px;
+    font-size: 24px;
+    color: aliceblue;
+}
+
+
+.search_area>form>input{
+    border: none;
+    width:250px;
+    height:40px;
+    background:rgba(0, 0, 0, 0);
+    color: #fff;
+    padding-left: 10px;
+
+}
+
+.search_area>form> span{
+    width: 50px;
+    color: #fff;
+    font-weight:bold ;
+    cursor: pointer;
+}   
+
+
+.intro_title {
+    margin-top: 200px;
+}
+
+.intro_title > h1,.intro_title >div{
+    color:#fff;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.amount{
+    background-color: #fff;
+    width: 1280px;
+    display: flex;
+    margin: auto;
+    height: 132px;
+    position: relative;
+    top: -66px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /*좌우(-+), 하, 흐려짐 정도, 색상*/
+}
+
+.amount>li{
+    flex:1px;
+}
+
+.amount>li>div{
+    text-align: center;
+    height: 57px;
+    margin-top: 37px;
+    
+}
+
+.amount>li:not(:last-child)>div{
+    border-right: 1px solid #E1E1E1;
+}
+
+
+.about_page>ul>li,.about_page>ul>h1{
+    text-align: center;
+}
+
+.more{
+    display: flex; 
+    width: 1280px;
+    margin: auto;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.more>li{
+    margin-top: 50px;
+    background-color: white;
+    width: 413.33px;
+    height: 330px;
+}
+
+.more>li>.more_img{
+    margin-top: 36px;
+}
+
+.more>li>div{
+    text-align: center;
+}
+
+.more>li>.small_title{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.more>li>.content1,.more>li>.content2,.more>li>.content3{
+    font-size:14px;
+    margin: 10px auto;
+}
+
+.more>li>a>.blue_more{
+    margin: auto;
+    text-align: center;
+    background-color: #2F7AF4;
+    color:white;
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+
+.service{
+    background-color: white;
+    padding-bottom: 100px;
+}
+.service>.service_header{
+    text-align: center;
+}
+
+.service>div{
+    position: relative;
+    top:50px;
+}
+
+.service>.service_main{
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+}  
+
+.service>.service_main>.text_box{
+    margin-left: 20px;
+    height: 426.5px;
+}
+
+.service>.service_main>.text_box>div{
+    margin-top: 25px;
+}
+
+.bottom_images{
+    background-image: url(images/contact.png);
+    background-repeat: no-repeat;  /*화면 크기를 못 채울 때 반복해서 할 것인가?*/
+    background-size: cover;
+}
+
+.bottom_images>.center{
+    width: 1920px;
+    margin: auto;
+}
+
+.bottom_images>.center>.left_text{
+    width: 960px;
+    height: 300px;
+    text-align: center;
+    padding-top: 138px;
+}
+
+.bottom_images>.center>.left_text>h1{
+    color: white;
+}
+
+.bottom_images>.center>.left_text>.content_font{
+    color: white;   
+}
+
+.bottom_images>.center>.left_text>.more_info{
+    margin: auto;
+    margin-top: 60px;
+    width: 220px;
+    height: 40px;
+    line-height: 200%;
+    font-size: 18px;
+    border: 1px solid white; /*경계는 항상 type(soid, dashed 등) 필수*/
+    cursor: pointer;
+}
+
+.bottom_images>.center>.left_text>.more_info>a{
+    color: white;
+}
+
+
+footer{
+    background-color: #1f1f1f;
+    height: 244px;
+}
+
+footer>.info{
+    display: flex;
+    height: 244px;
+    width: 1920px;;
+    margin: auto;
+}
+
+footer>.info>h1{
+    margin: auto;
+    margin-right: 80px;
+    color: white;
+}
+
+footer>.info>ul{
+    margin: auto;
+}
+
+footer>.info>ul>li{
+    color:white;
+    font-size: 20px;
+    line-height: 250%;
+}
